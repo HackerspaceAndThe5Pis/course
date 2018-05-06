@@ -1,2 +1,2 @@
-# How to build and Arcade Machine
+# How to build an Arcade Machine
 
