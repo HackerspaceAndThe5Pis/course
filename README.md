@@ -7,3 +7,11 @@ This is a 5 weeks course on how to build an arcade machine with raspberry pi. At
 ## Usage
 Clone the repository to your machine and use the appropriate material for each week in the course folder.
 ## Course
+**Week 01** - 
+**Week 02** - 
+**Week 03** - 
+**Week 04** - 
+**Week 05** - 
+## Documentaion
+You can find the Documentation [on the website](https://hackerspaceandthe5pis.github.io/course/).
+##License
