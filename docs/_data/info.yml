@@ -1,0 +1,16 @@
+#--------------
+# Genral Site Settings
+title: How to build an Arcade Machine | Hackerspace and the 5 Pi's
+name: Hackerspace and the 5 Pi's
+description: Create a Course on how to build an arcade machine using a Raspberry Pi, CNC, 3D printer, etc.
+
+# About Section
+description: Create a Course on how to build an arcade machine using a Raspberry Pi, CNC, 3D printer, etc. The course is hosted on GitHub and Github Pages and is Open Source / freely available to everyone.
+client: Ballarat Hackerspace is a non-profit community group that runs courses designed to help learn new technologies and expand-upon existing technologies.
+
+# Team Members
+team:
+- {name: Sanjeet Kanwar, id: 30050717}
+- {name: Luke Hall, id: 301330997}
+- {name: Riley Green, id: 30306333}
+- {name: Berkey Atalay, id: 30328057}
