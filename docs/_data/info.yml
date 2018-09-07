@@ -14,3 +14,9 @@ team:
 - {name: Luke Hall, id: 301330997}
 - {name: Riley Green, id: 30306333}
 - {name: Berkey Atalay, id: 30328057}
+
+#Menu Items List
+menu:
+  - {name: Home, url: '#home'}
+  - {name: Course, url: '#course'}
+  - {name: Team Members, url: '#team'}

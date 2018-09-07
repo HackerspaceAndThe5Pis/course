@@ -1,0 +1,19 @@
+<header>
+    <nav class="navbar navbar-expand navbar-dark bg-dark">
+        <div class="container d-flex justify-content-between">
+            <a class="navbar-brand" href="#">
+                <img class="d-inline-block align-top" src="/assets/img/logo.png" width="30" height="30" alt="">
+            </a>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    {% for item in site.data.info.menu %}
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">{{ item.name }}</a>
+                        </li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
