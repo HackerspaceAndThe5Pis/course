@@ -9,7 +9,7 @@
                 <ul class="navbar-nav ml-auto">
                     {% for item in site.data.info.menu %}
                         <li class="nav-item">
-                            <a class="nav-link" href="#">{{ item.name }}</a>
+                            <a class="nav-link" href="{{item.url}}">{{ item.name }}</a>
                         </li>
                     {% endfor %}
                 </ul>

@@ -17,6 +17,6 @@ team:
 
 #Menu Items List
 menu:
-  - {name: Home, url: '#home'}
+  - {name: Home, url: '/'}
   - {name: Course, url: '#course'}
   - {name: Team Members, url: '#team'}
