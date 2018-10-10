@@ -11,7 +11,7 @@ layout: course
         </div>
         <div class="col-sm-10 pt-2" id="right">
         <div class="accordion" id="accordionExample">
-            {% for i in (1..10) %}
+            {% for i in (1..2) %}
             <div class="card">
             <div class="card-header" id="headingOne">
                 <h5 class="mb-0">
@@ -23,7 +23,7 @@ layout: course
         
             <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
                 <div class="card-body">
-                    {% capture my_include %}{% include week.md %}{% endcapture %}
+                    {% capture my_include %}{% include week1.md %}{% endcapture %}
                     {{ my_include | markdownify }}
                 </div>
             </div>
