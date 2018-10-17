@@ -32,7 +32,6 @@ For the Pi Store version place the ROMS in the directory:
 | snap | Screen snapshots directory |
 | sta | Save states directory |
 
-<br />
 ##### To run MAME run "mame" executable for GUI frontend.
 ```sh
 ./mame
