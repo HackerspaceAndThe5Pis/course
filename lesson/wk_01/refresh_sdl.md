@@ -1,0 +1,121 @@
+### Refresh SDL
+Default SDL that comes with Raspbian is not latest or best for the project.
+
+Use this version [Source](https://choccyhobnob.com/raspberry-pi/sdl2-2-0-8-on-raspberry-pi/)
+
+Can be installed thought the connected internet.
+
+Before we install MAME and the game ROMs, we need to replace the SDL version supplied with the Raspbian image with an up to date version for your Raspberry Pi.
+
+##### Pre-SDL Refresh
+```sh
+sudo raspi-config
+(Set memory split to 16)
+```
+##### Refresh SDL
+SDL2 is installed by default but it is compiled for desktop users for X and OpenGL, neither of which take advantage of a framebuffer and confuses MAME if we try to compile using it.
+
+##### Remove any existing SDL installed
+
+```sh
+sudo apt-get remove -y --force-yes libsdl12-dev
+sudo apt-get autoremove -y
+```
+
+##### Install required software to setup our build environment
+
+```sh
+sudo apt-get install libfontconfig-dev qt5-default automake mercurial libtool libfreeimage-dev libopenal-dev libpango1.0-dev libsndfile-dev libudev-dev libtiff5-dev libwebp-dev libasound2-dev libaudio-dev libxrandr-dev libxcursor-dev libxi-dev libxinerama-dev libxss-dev libesd0-dev freeglut3-dev libmodplug-dev libsmpeg-dev libjpeg-dev
+
+(PRESS Y)
+```
+##### Create a folder in your home folder for storing and building the source files we will be downloading
+
+```sh
+cd
+mkdir code
+cd code
+```
+
+##### Download the latest build of the libsdl mercurial
+
+```sh
+hg clone http://hg.libsdl.org/SDL
+cd SDL
+```
+
+##### Build SDL
+
+```sh
+1 ./autogen.sh
+2 ./configure --disable-pulseaudio --disable-esd --disable-video-mir --disable-video-wayland --disable-video-opengl --host=arm-raspberry-linux-gnueabihf
+3 make
+4 sudo make install
+5 sdl-config --version (check sdl version installed)
+```
+
+#####  Download SDL Libraries
+
+```sh
+cd
+cd code
+wget http://www.libsdl.org/projects/SDL_image/release/SDL2_image-2.0.2.tar.gz
+wget http://www.libsdl.org/projects/SDL_mixer/release/SDL2_mixer-2.0.2.tar.gz
+wget http://www.libsdl.org/projects/SDL_net/release/SDL2_net-2.0.1.tar.gz
+wget http://www.libsdl.org/projects/SDL_ttf/release/SDL2_ttf-2.0.14.tar.gz
+```
+
+##### Uncompress each Library
+
+```sh
+tar zxvf SDL2_image-2.0.2.tar.gz
+tar zxvf SDL2_mixer-2.0.2.tar.gz
+tar zxvf SDL2_net-2.0.1.tar.gz
+tar zxvf SDL2_ttf-2.0.14.tar.gz
+```
+
+##### Build the image file loading library
+
+```sh
+cd SDL2_image-2.0.2
+./autogen.sh
+./configure
+make
+sudo make install
+cd ..
+```
+
+##### Build the audio mixer library
+
+```sh
+cd SDL2_mixer-2.0.2
+./autogen.sh
+./configure
+make
+sudo make install
+cd ..
+```
+
+##### Build the networking mixer library
+
+```sh
+cd SDL2_net-2.0.1
+./autogen.sh
+./configure
+make
+sudo make install
+cd ..
+```
+
+##### Build the Truetype font library
+
+```sh
+cd SDL2_ttf-2.0.14
+./autogen.sh
+./configure
+make
+sudo make install
+cd ..
+```
+
+Any program that uses SDL2 to draw to the framebuffer should now be doing it in hardware on the Raspberry Pi’s videocore4 using opengles2!

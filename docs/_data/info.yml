@@ -5,7 +5,7 @@ name: Hackerspace and the 5 Pi's
 description: Create a Course on how to build an arcade machine using a Raspberry Pi, CNC, 3D printer, etc.
 
 # About Section
-description: Create a Course on how to build an arcade machine using a Raspberry Pi, CNC, 3D printer, etc. The course is hosted on GitHub and Github Pages and is Open Source / freely available to everyone.
+description2: A Course on how to build an arcade machine using a Raspberry Pi, CNC, 3D printer, etc. The course is hosted on GitHub and Github Pages and is Open Source / freely available to everyone.
 client: Ballarat Hackerspace is a non-profit community group that runs courses designed to help learn new technologies and expand-upon existing technologies.
 
 # Team Members
@@ -18,5 +18,5 @@ team:
 #Menu Items List
 menu:
   - {name: Home, url: '/'}
-  - {name: Course, url: '#course'}
+  - {name: About The Course, url: '#course'}
   - {name: Team Members, url: '#team'}
