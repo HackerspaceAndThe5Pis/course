@@ -4,7 +4,7 @@ layout: course
 <div class="container-fluid">
     <div class="row" id="week-page-row">
         <div class="col-sm-2 text-center pt-2" id="left">
-        <h4>Topics</h4><br />
+            <h4>Topics</h4><br />
             {% for i in (1..10) %}
             <p>Left Side</p>
             {% endfor %}
@@ -59,7 +59,6 @@ layout: course
                             {{ my_include | markdownify }}
                         </div>
                     </div>
-                    </div>
                 </div>
                 <div class="card">
                     <div class="card-header" id="headingFour">
@@ -76,6 +75,37 @@ layout: course
                             {{ my_include | markdownify }}
                         </div>
                     </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingFive">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
+                               Boot from Mame
+                            </button>
+                        </h5>
+                    </div>
+                
+                    <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+                        <div class="card-body">
+                            {% capture my_include %}{% include week1/mame_boot.md %}{% endcapture %}
+                            {{ my_include | markdownify }}
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingSix">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="true" aria-controls="collapseSix">
+                                Install Game ROM
+                            </button>
+                        </h5>
+                    </div>
+                
+                    <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordionExample">
+                        <div class="card-body">
+                            {% capture my_include %}{% include week1/game_rom.md %}{% endcapture %}
+                            {{ my_include | markdownify }}
+                        </div>
                     </div>
                 </div>
             </div>
