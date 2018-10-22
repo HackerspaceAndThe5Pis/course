@@ -17,14 +17,14 @@
                     <h5 class="card-title">What will I learn?</h5>
                     <div class="row">
                         <div class="col-sm">
-                                <i class="fas fa-check mr-1"></i>About Raspberry Pi and install Raspbian<br/><br/>
-                                <i class="fas fa-check mr-1"></i>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br/><br/>
-                                <i class="fas fa-check mr-1"></i>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br/><br/>
-                                <i class="fas fa-check mr-1"></i>Anything else goes here<br/>
+                            {% for item in site.data.info.learn-col1 %}
+                                <i class="fas fa-check mr-1"></i>{{ item.each }}<br/><br/>
+                            {% endfor %}
                         </div>
                         <div class="col-sm">
-                                <i class="fas fa-check mr-1"></i>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br/><br/>
-                                <i class="fas fa-check mr-1"></i>Anything else goes here<br/>
+                            {% for item in site.data.info.learn-col2 %}
+                                <i class="fas fa-check mr-1"></i>{{ item.each }}<br/><br/>
+                            {% endfor %}
                         </div>
                     </div>
                 </div>

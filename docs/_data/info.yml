@@ -8,6 +8,19 @@ description: Create a Course on how to build an arcade machine using a Raspberry
 description2: A Course on how to build an arcade machine using a Raspberry Pi, CNC, 3D printer, etc. The course is hosted on GitHub and Github Pages and is Open Source / freely available to everyone.
 client: Ballarat Hackerspace is a non-profit community group that runs courses designed to help learn new technologies and expand-upon existing technologies.
 
+#Home Page (what will i learn first column)
+learn-col1:
+  - {each: What is Raspberry Pi and how to install Raspbian.}
+  - {each: Delete default SDL and install latest version of SDL for the Raspberry Pi.} 
+  - {each: MAME and install MAME4ALL_PI edition.}
+  - {each: Boot from the installed MAME.}
+
+#Home Page (what will i learn second column)
+learn-col2:
+  - {each: Download and install game ROMs}
+  - {each: Something about CNC}
+
+
 # Team Members
 team:
 - {name: Sanjeet Kanwar, id: 30050717}
@@ -18,5 +31,5 @@ team:
 #Menu Items List
 menu:
   - {name: Home, url: '/'}
-  - {name: About The Course, url: '#course'}
+  - {name: About The Course, url: 'pages/about'}
   - {name: Team Members, url: '#team'}
