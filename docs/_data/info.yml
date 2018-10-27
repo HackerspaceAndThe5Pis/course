@@ -31,5 +31,5 @@ team:
 #Menu Items List
 menu:
   - {name: Home, url: '/'}
-  - {name: About The Course, url: 'pages/about'}
-  - {name: Team Members, url: '#team'}
+  - {name: About The Course, url: '#about-course'}
+  - {name: Team Members, url: '#team-members'}
