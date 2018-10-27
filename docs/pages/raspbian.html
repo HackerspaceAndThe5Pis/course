@@ -5,17 +5,17 @@ layout: course
     <div class="row" id="week-page-row">
         <div class="col-sm-2 text-center pt-2" id="left">
             <h4>Topics</h4><br />
-            {% for i in (1..10) %}
+            {% for i in (1..4) %}
                 <p>Left Side</p>
             {% endfor %}
         </div>
         <div class="col-sm-10 pt-2" id="right">
-            <h1>Week 1 Course</h1>
+            <h1>Raspbian</h1>
             <div class="accordion" id="accordionExample">
                 <div class="card">
                     <div class="card-header" id="headingOne">
                         <h5 class="mb-0">
-                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            <button class="btn btn-link text-dark" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                                 Install Raspbian Part 1
                             </button>
                         </h5>
@@ -23,7 +23,7 @@ layout: course
                 
                     <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
                         <div class="card-body">
-                            {% capture my_include %}{% include week1/rasp1.md %}{% endcapture %}
+                            {% capture my_include %}{% include raspbian/1.rasp1.md %}{% endcapture %}
                             {{ my_include | markdownify }}
                         </div>
                     </div>
@@ -31,7 +31,7 @@ layout: course
                 <div class="card">
                     <div class="card-header" id="headingTwo">
                         <h5 class="mb-0">
-                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                            <button class="btn btn-link text-dark" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
                                 Install Raspbian Part 2
                             </button>
                         </h5>
@@ -39,7 +39,7 @@ layout: course
                 
                     <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
                         <div class="card-body">
-                            {% capture my_include %}{% include week1/rasp2.md %}{% endcapture %}
+                            {% capture my_include %}{% include raspbian/2.rasp2.md %}{% endcapture %}
                             {{ my_include | markdownify }}
                         </div>
                     </div>
@@ -47,7 +47,7 @@ layout: course
                 <div class="card">
                     <div class="card-header" id="headingThree">
                         <h5 class="mb-0">
-                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                            <button class="btn btn-link text-dark" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
                                 Refresh SDL
                             </button>
                         </h5>
@@ -55,7 +55,7 @@ layout: course
                 
                     <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
                         <div class="card-body">
-                            {% capture my_include %}{% include week1/refresh_sdl.md %}{% endcapture %}
+                            {% capture my_include %}{% include raspbian/3.refresh_sdl.md %}{% endcapture %}
                             {{ my_include | markdownify }}
                         </div>
                     </div>
@@ -63,7 +63,7 @@ layout: course
                 <div class="card">
                     <div class="card-header" id="headingFour">
                         <h5 class="mb-0">
-                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                            <button class="btn btn-link text-dark" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
                                 Install Mame4All
                             </button>
                         </h5>
@@ -71,7 +71,7 @@ layout: course
                 
                     <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
                         <div class="card-body">
-                            {% capture my_include %}{% include week1/mame4all.md %}{% endcapture %}
+                            {% capture my_include %}{% include raspbian/4.mame4all.md %}{% endcapture %}
                             {{ my_include | markdownify }}
                         </div>
                     </div>
@@ -79,7 +79,7 @@ layout: course
                 <div class="card">
                     <div class="card-header" id="headingFive">
                         <h5 class="mb-0">
-                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
+                            <button class="btn btn-link text-dark" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
                                Boot from Mame
                             </button>
                         </h5>
@@ -87,7 +87,7 @@ layout: course
                 
                     <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
                         <div class="card-body">
-                            {% capture my_include %}{% include week1/mame_boot.md %}{% endcapture %}
+                            {% capture my_include %}{% include raspbian/5.mame_boot.md %}{% endcapture %}
                             {{ my_include | markdownify }}
                         </div>
                     </div>
@@ -95,15 +95,31 @@ layout: course
                 <div class="card">
                     <div class="card-header" id="headingSix">
                         <h5 class="mb-0">
-                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="true" aria-controls="collapseSix">
-                                Install Game ROM
+                            <button class="btn btn-link text-dark" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="true" aria-controls="collapseSix">
+                                Install Retro Game
                             </button>
                         </h5>
                     </div>
                 
                     <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordionExample">
                         <div class="card-body">
-                            {% capture my_include %}{% include week1/game_rom.md %}{% endcapture %}
+                            {% capture my_include %}{% include raspbian/6.retrogame.md %}{% endcapture %}
+                            {{ my_include | markdownify }}
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingSeven">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link text-dark" type="button" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="true" aria-controls="collapseSeven">
+                                Install Game ROM
+                            </button>
+                        </h5>
+                    </div>
+                
+                    <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordionExample">
+                        <div class="card-body">
+                            {% capture my_include %}{% include raspbian/7.game_rom.md %}{% endcapture %}
                             {{ my_include | markdownify }}
                         </div>
                     </div>

@@ -23,13 +23,13 @@ learn-col2:
 
 # Team Members
 team:
-- {name: Sanjeet Kanwar, id: 30050717}
-- {name: Luke Hall, id: 301330997}
-- {name: Riley Green, id: 30306333}
-- {name: Berkey Atalay, id: 30328057}
+- {name: Sanjeet Kanwar, id: 30050717, title: Github and Github Pages Developer, avatar: 'https://www.sanjeet.com.au/assets/img/head-shot.png'}
+- {name: Luke Hall, id: 301330997, title: Raspberry Pi Image Developer and Tester, avatar: 'https://dummyimage.com/200x200/000/fff.jpg&text=Avatar'}
+- {name: Riley Green, id: 30306333, title: Content Developer, avatar: 'https://dummyimage.com/200x200/000/fff.jpg&text=Avatar'}
+- {name: Berkey Atalay, id: 30328057, title: CAD/Blueprint Designer, avatar: 'https://dummyimage.com/200x200/000/fff.jpg&text=Avatar'}
 
 #Menu Items List
 menu:
   - {name: Home, url: '/'}
-  - {name: About The Course, url: '#about-course'}
+  - {name: About, url: '#about-course'}
   - {name: Team Members, url: '#team-members'}
