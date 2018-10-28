@@ -1,0 +1,35 @@
+### Parts Suppled to You and How to Connect them
+
+##### Equipment Supplied for Project
+- 8GB MicroSD card (contains pre-built image)
+- Raspberry Pi 3b+ & Power Cord
+- 6 Buttons
+- Joystick
+- 1x 1-pin grounding cable
+- 3x 4-pin Multi-coloured Connecter Cables (daisy-chained pin sleeves)
+- 19” monitor with rear mounting bracket space
+- 3” speakers with 3.5mm jack
+- Wood for frame
+- USB keyboard & USB mouse
+
+##### Putting it all together
+1. Construct the frame (wood)
+2. Install the buttons and joystick into the holes cut for them.
+3. Mount the Raspberry Pi in the frame
+4. Connect the power cord to the Raspberry Pi (do not turn on yet)
+5. Insert the MicroSD card into the Raspberry Pi
+6. Grouding Connecter cable 
+    - Connect one end of the grounding cable to PIN 39 on the RPi
+    - On the bottom of each button is a box with 2 pins on its side and 1 pin on the bottom (joystick has several of these boxes to control up/down/left/right)
+    - Connect the remaining sleeves of the grounding cable to the bottom pin on each pin box
+7. Connecter cable #1
+    - Use PINs 31-33-35-37
+8. Connecter cable #2
+    - Use PINs 23-25-27-29
+9. Connecter cable #3
+    - Use PINs 34-36-38-40
+10. Plug in the USB keyboard + USB mouse + speakers + HDMI Monitor
+11. Using the supplied image, connect the cables to the buttons and joystick
+12. Turn on the power to the monitor and then power the Raspberry Pi
+13. Wait MAME to load.
+14. Use the joystick to scroll through the games, press the [COLOUR] button to play that game (see User Manual as to which button(s) to press other options).

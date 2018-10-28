@@ -34,3 +34,11 @@ menu:
   - {name: Home, url: '/'}
   - {name: About, url: '/#about-course'}
   - {name: Team Members, url: '/#team-members'}
+
+#Left sidebar links
+sidebar:
+- {name: CNC - Preparing CAD Model, url: /cad-model-step1.html}
+- {name: CNC - Assemble Arcade Cabinet, url: /cnc-step1.html}
+- {name: Connecting The Parts, url: /connect-parts.html}
+- {name: Measurements, url: /measurements.html}
+- {name: Useful Links, url: /useful-links.html}
