@@ -1,0 +1,23 @@
+---
+layout: course
+---
+<div class="container-fluid">
+    <div id="about-course" class="row pt-5 pb-5">
+        <div class="col-12">
+            <h2 class="text-center">Useful Links</h2>
+        </div>
+    </div>
+</div>
+<div class="container border">
+    <div class="row mt-3 mb-3 pl-3">
+        <div class="col-12 pl-3">
+            {% capture my_include %}{% include useful-links.md %}{% endcapture %}
+            {{ my_include | markdownify }}
+        </div>
+    </div>
+    <div class="row mt-3 mb-3">
+        <div class="col-12 text-right">
+            <a href="{{ site.baseurl }}/pages/raspbian.html" class="btn btn-outline-dark">Course Home<i class="fa fa-home pl-1"></i></a>
+        </div>
+    </div>
+</div>
