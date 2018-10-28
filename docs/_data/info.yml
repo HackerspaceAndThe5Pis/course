@@ -5,18 +5,32 @@ name: Hackerspace and the 5 Pi's
 description: Create a Course on how to build an arcade machine using a Raspberry Pi, CNC, 3D printer, etc.
 
 # About Section
-description2: A Course on how to build an arcade machine using a Raspberry Pi, CNC, 3D printer, etc. The course is hosted on GitHub and Github Pages and is Open Source / freely available to everyone.
+description2: A Course on how to build an arcade machine.
 client: Ballarat Hackerspace is a non-profit community group that runs courses designed to help learn new technologies and expand-upon existing technologies.
+
+#Home Page (what will i learn first column)
+learn-col1:
+  - {each: What is Raspberry Pi and how to install Raspbian.}
+  - {each: Delete default SDL and install latest version of SDL for the Raspberry Pi.} 
+  - {each: MAME and install MAME4ALL_PI edition.}
+  - {each: Boot from the installed MAME.}
+
+#Home Page (what will i learn second column)
+learn-col2:
+  - {each: Download and install game ROMs.}
+  - {each: How to print model through a CNC machine.}
+  - {each: Instructions on how to assemble the arcade cabinet.}
+
 
 # Team Members
 team:
-- {name: Sanjeet Kanwar, id: 30050717}
-- {name: Luke Hall, id: 301330997}
-- {name: Riley Green, id: 30306333}
-- {name: Berkey Atalay, id: 30328057}
+- {name: Sanjeet Kanwar, id: 30050717, title: Github and Github Pages Developer, avatar: 'https://www.sanjeet.com.au/assets/img/head-shot.png'}
+- {name: Luke Hall, id: 301330997, title: Raspberry Pi Image Developer and Tester, avatar: 'https://dummyimage.com/200x200/000/fff.jpg&text=Avatar'}
+- {name: Riley Green, id: 30306333, title: Content Developer, avatar: 'https://dummyimage.com/200x200/000/fff.jpg&text=Avatar'}
+- {name: Berkey Atalay, id: 30328057, title: CAD/Blueprint Designer, avatar: 'https://dummyimage.com/200x200/000/fff.jpg&text=Avatar'}
 
 #Menu Items List
 menu:
   - {name: Home, url: '/'}
-  - {name: About The Course, url: '#course'}
-  - {name: Team Members, url: '#team'}
+  - {name: About, url: '/#about-course'}
+  - {name: Team Members, url: '/#team-members'}
