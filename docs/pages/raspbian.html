@@ -3,13 +3,8 @@ layout: course
 ---
 <div class="container-fluid">
     <div class="row" id="week-page-row">
-        <div class="col-sm-2 text-center pt-2" id="left">
-            <h4>Topics</h4><br />
-            {% for i in (1..4) %}
-                <p>Left Side</p>
-            {% endfor %}
-        </div>
-        <div class="col-sm-10 pt-2" id="right">
+        {% include sidebar.html %}
+        <div class="col-sm-9 pt-2" id="right">
             <h1>Raspbian - How To Make Your Own Image</h1>
             <div class="accordion" id="accordionExample">
                 <div class="card">
@@ -128,4 +123,3 @@ layout: course
         </div>
     </div>
 </div>
-

@@ -1,0 +1,8 @@
+<div class="col-sm-3 text-center pt-3" id="left">
+    <h4>Topics</h4><br />
+    {% for item in site.data.info.sidebar %}
+        <p>
+            <a class="text-light" href="{{ site.baseurl }}/pages{{ item.url }}">{{ item.name }}</a>
+        </p>
+    {% endfor %}
+</div>
