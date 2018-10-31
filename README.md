@@ -5,7 +5,7 @@ This is a 5 weeks course on how to build an arcade machine with raspberry pi. At
 ## Get It
     $ git clone https://github.com/HackerspaceAndThe5Pis/course.git
 ## Usage
-    You can find the Course [on the website](https://hackerspaceandthe5pis.github.io/course/).
+You can find the Course [on the website](https://hackerspaceandthe5pis.github.io/course/).
 ## What will you learn
 - **CNC CAD model**
 
