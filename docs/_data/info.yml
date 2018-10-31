@@ -27,7 +27,7 @@ team:
 - {name: Sanjeet Kanwar, id: 30050717, title: Github and Github Pages Developer, avatar: /assets/img/teams/sk.png}
 - {name: Luke Hall, id: 301330997, title: Raspberry Pi Image Developer and Tester, avatar: /assets/img/teams/luke.jpg}
 - {name: Riley Green, id: 30306333, title: Content Developer, avatar: '/assets/img/teams/temp-avatar.png'}
-- {name: Berkay Atalay, id: 30328057, title: CAD/Blueprint Designer, avatar: 'assets/img/teams/temp-avatar.png'}
+- {name: Berkay Atalay, id: 30328057, title: CAD/Blueprint Designer, avatar: '/assets/img/teams/temp-avatar.png'}
 
 #Menu Items List
 menu:
