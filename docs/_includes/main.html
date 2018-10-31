@@ -54,7 +54,7 @@
             </div>
             {% for item in site.data.info.team %}
                 <div class="col-3 text-center mt-3 mb-4">
-                    <img class="rounded-circle img-fluid d-block mx-auto mb-1" src="{{ item.avatar }}" alt="">
+                    <img class="rounded-circle img-fluid d-block mx-auto mb-1" src="{{ site.baseurl }}{{ item.avatar }}" alt="">
                     <h4>{{ item.name }}
                     <small>{{ item.id }}</small>
                     </h4>

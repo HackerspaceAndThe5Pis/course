@@ -24,10 +24,10 @@ learn-col2:
 
 # Team Members
 team:
-- {name: Sanjeet Kanwar, id: 30050717, title: Github and Github Pages Developer, avatar: 'https://www.sanjeet.com.au/assets/img/head-shot.png'}
-- {name: Luke Hall, id: 301330997, title: Raspberry Pi Image Developer and Tester, avatar: 'https://dummyimage.com/200x200/000/fff.jpg&text=Avatar'}
+- {name: Sanjeet Kanwar, id: 30050717, title: Github and Github Pages Developer, avatar: /assets/img/teams/sk.png}
+- {name: Luke Hall, id: 301330997, title: Raspberry Pi Image Developer and Tester, avatar: /assets/img/teams/luke.jpg}
 - {name: Riley Green, id: 30306333, title: Content Developer, avatar: 'https://dummyimage.com/200x200/000/fff.jpg&text=Avatar'}
-- {name: Berkey Atalay, id: 30328057, title: CAD/Blueprint Designer, avatar: 'https://dummyimage.com/200x200/000/fff.jpg&text=Avatar'}
+- {name: Berkay Atalay, id: 30328057, title: CAD/Blueprint Designer, avatar: 'https://dummyimage.com/200x200/000/fff.jpg&text=Avatar'}
 
 #Menu Items List
 menu:
